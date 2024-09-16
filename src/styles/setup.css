@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 0 4vw;
+}
+
+
+:root {
+    --background-color: #4771b6;
+    --foreground-color: #66a6e5;
+    --highlight-color: #88d5f2;
+    --font-sm: 12px;
+    --font-md: 18px;
+    --font-lg: 24px;
+    --font-xl: 36px;
+
+    font-size: var(--font-md);
+    background-color: var(--background-color);
+}
+
+@font-face {
+    font-family: "FutureKid";
+    src: url("../assets/fonts/FutureKid.ttf");
+}

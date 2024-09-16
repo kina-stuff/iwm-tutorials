@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/style.css">
+    <title>I Wanna Maker</title>
+  </head>
+  <body>
+    <nav id="nav">
+      <a href="index.html">Back</a>
+    </nav>
+    <div id="app">
+      <h1>
+        Object Linking
+      </h1>
+      <div class="x-split">
+        <div>
+          <p>
+            Object linking, as the name implies, links an object to another object, making the child object follow the parent.
+          </p>
+          <p>
+            When you use the link tool the object that you have currently selected will be a child of whatever object you click on with the link tool (which would then be the parent).
+          </p>
+        </div>
+        <div>
+          <img class="floating-box" src="basic-linking.png" alt="A spike being linked to a block using the link tool" loading="lazy">
+        </div>
+      </div>
+      <h2>
+        The effects of linking objects
+      </h2>
+      <ul>
+        <li>The child will follow the movement of the parent</li>
+        <li>The child will get destroyed when the parent gets destroyed</li>
+        <li>The child will toggle collision when the parent toggles collision</li>
+      </ul>
+      <h2>
+        Notes
+      </h2>
+      <ul>
+        <li>A parent can have multiple children but a child cannot have multiple parents</li>
+        <li>Children's own movement through events will be combined with the movement of the parent, that is, if the parent is moving right and the child has an event for moving down, then the child will move diagonally down-right</li>
+      </ul>
+
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
